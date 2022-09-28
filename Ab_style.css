@@ -1,0 +1,154 @@
+html {
+    box-sizing: border-box;
+  }
+
+body {
+  font-family: "Montserrat", sans-serif;
+    color: lightgrey;
+    font-size: large;
+}
+
+/* ********HEADER********* */
+
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding: 0px 200px;
+}
+
+header .hdiv img{
+  height: 40px;
+  width: 40px;
+}
+
+header .hdiv{
+  display: flex;
+  align-items: center;
+}
+
+header .hdiv h3{
+margin: 10px;
+
+}
+
+.nav_links{
+  list-style: none;
+}
+
+.nav_links li{
+  display: inline-block;
+  padding: 0px 10px;
+}
+
+li a{
+  transition: all 0.3s ease 0s; 
+  color: white;
+  text-decoration: none;
+}
+
+li a:hover {
+  color: rgb(137, 1, 1);
+}
+
+
+/* ******** BODY ******** */
+.row{
+  margin-top: 25px;
+}
+
+form input[type="button"]:hover{ background-color:darkolivegreen ;}
+
+main{
+    display: block;
+    top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+  
+  .column {
+    float: left;
+    margin-left: 20px;
+    width: 12%;
+    margin-bottom: 16px;
+    padding: 0 8px;
+
+  }
+  
+  .card {
+    margin: 8px;
+    background-image: linear-gradient(to top, rgba(255, 255, 255, 0.0), rgb(135, 25, 25));
+    opacity: 0.9;
+    border-radius: 12px;
+  }
+  
+  .about-section {
+    position: relative;
+    float: right;
+    margin-right: 15px;
+    width: 43%;
+    padding: 50px;
+    text-align: center;
+    background-image: linear-gradient(to right, rgba(245, 246, 252, 0), rgb(135, 25, 25));
+    background-size: cover;
+    color: white;
+    opacity: 0.8;
+    border-radius: 12px;
+  }
+  
+  .container {
+
+    text-align: center;
+    padding: 3px 10px;
+    color: white;
+    
+  }
+  
+  .container::after, .row::after {
+    content: "";
+    clear: both;
+    display: table;
+  }
+  
+  .title {
+    color: rgb(209, 209, 209);
+  }
+  
+  .button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: rgb(84, 19, 19);
+    background-color: rgba(255, 255, 255, 0.597);
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 12px;
+  }
+  
+  .button:hover {
+    background-color:rgba(108, 43, 43, 0.5);
+    color: rgb(255, 255, 255);
+    transition: all 0.3s ease 0s; 
+    border-radius: 12px;
+
+  }
+  
+  @media screen and (max-width: 650px) {
+    .column {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  .about-section h1{
+    margin-bottom: 70px;
+
+  }
+
+  
+

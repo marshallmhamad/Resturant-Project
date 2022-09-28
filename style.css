@@ -1,5 +1,5 @@
 body {
-    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family: "Montserrat", sans-serif;
     color: lightgrey;
     font-size: large;
 
@@ -8,8 +8,9 @@ body {
 .box {
     width: 900px;
     float: right;
-    border: 2px;
-    border-color:black;}
+    border: 2px black;
+    border-radius: 10px;}
+
 .box ul li  {
     width: 120px;
     float: left;
@@ -21,17 +22,24 @@ body {
     color:white;}
 
 .box ul li:hover{
-        background-color:darkolivegreen;
+        background-color:rgba(85, 107, 47, 0.419);
+        transition: all 0.3s ease 0s; 
+        border-radius: 12px;
     }
 .welcome {
-    width: 280px;
+    position: fixed;
+    top: 80px;
+    margin-left: 15px;
+    width: 34%;
     height: 450px;
-    background-color:black;
+    color: white;
+    background-image: linear-gradient(to left, rgba(245, 246, 252, 0), #606060dc);
+    border-radius: 10px;
     opacity: 0.8;
     padding: 55px;
 }
 .welcome h1 {
-    text-align: center;
+    text-align: left;
     text-transform:uppercase;
     font-weight:100px;
 }
@@ -41,22 +49,81 @@ body {
     font-weight: normal;
 }
 .welcome h2 {
-    text-align: center;
+    text-align:left;
     text-transform: uppercase;
     margin: auto;
     font-weight: normal;
 }
 .Res {
-    text-align: center;
+    text-align: left;
 
 }
 .Res form input[type="button"]
-{ background-color:white;
+{ background-color:rgb(255, 255, 255);
     padding: 10px;
-    margin:-14px; auto;
+    margin-left:13px;
     padding-left: 50px;
     padding-right: 50px;
-text-align: center;
+    text-align: center;
+    border-radius: 15px;
+    border: none;
+    color: rgb(179, 7, 7);
+    font-weight: bold;
 }
-form input[type="button"]:hover{ background-color:darkolivegreen ;}
+form input[type="button"]:hover{ background-color:rgb(83, 20, 20) ; color: white;}
 
+.welcome h1,h2{
+    color: white;
+    opacity: 100%;
+}
+
+.welcome p{
+    line-height: 30px;
+    text-align: left;
+}
+
+
+
+header{
+    display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 30px;
+  margin-top: 25px;
+  margin-bottom: 10px;
+  padding: 0px 200px;
+  }
+  
+  header .hdiv img{
+    height: 40px;
+    width: 40px;
+  }
+  
+  header .hdiv{
+    display: flex;
+    align-items: center;
+  }
+  
+  header .hdiv h3{
+  margin: 10px;
+  
+  }
+  
+  .nav_links{
+    list-style: none;
+  }
+  
+  .nav_links li{
+    display: inline-block;
+    padding: 0px 10px;
+  }
+  
+  li a{
+    transition: all 0.3s ease 0s; 
+    color: white;
+    text-decoration: none;
+  }
+  
+  li a:hover {
+    color: rgb(137, 1, 1);
+  }

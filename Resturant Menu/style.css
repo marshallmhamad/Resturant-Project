@@ -92,3 +92,24 @@ display: flex;
 align-items: center;
 margin-top: 40px;
 }
+
+
+input[type=text]{
+	 
+  margin-top: 7px;
+  margin-right: 16px;
+  margin-bottom: 30px;
+  font-size: 17px;
+  background: rgba(233,233,233,0.64);
+  border: 2px solid rgba(108,64,15,1.00);
+  padding: 8px 30px 8px 8px ;
+  height: 35px;
+  border-radius:5px;
+  outline: none;
+  color:rgba(255,255,255,0.84);
+}
+
+.search{
+	display: flex;
+	width: 70%;
+}
